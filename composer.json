@@ -1,15 +1,20 @@
 {
-    "name": "hexlet/code",
-    "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Kirill Dvoynikov",
-            "email": "illdve16@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "hexlet/code",
+  "bin": [
+    "bin/brain-games"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hexlet\\Code\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Kirill Dvoynikov",
+      "email": "illdve16@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "description": "hexlet php-project-1",
+  "require": {}
 }
