@@ -11,7 +11,7 @@ const OPERATIONS = ['+', '-', '*'];
 
 
 
-function play()
+function play(): void
 {
     $generateRound = function () {
         $a = rand(MIN_RANGE, MAX_RANGE);

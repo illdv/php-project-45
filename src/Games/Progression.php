@@ -14,7 +14,7 @@ const MAX_START_RANGE = 10;
 
 
 
-function play()
+function play(): void
 {
     $generateRound = function () {
         $length = rand(MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH);

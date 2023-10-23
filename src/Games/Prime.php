@@ -8,7 +8,7 @@ const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no
 const MIN_RANGE = 1;
 const MAX_RANGE = 10;
 
-function isPrime($number)
+function isPrime(int $number): bool
 {
     if ($number < 2) {
         return false;
@@ -22,7 +22,7 @@ function isPrime($number)
     return true;
 }
 
-function play()
+function play(): void
 {
     $generateRound = function () {
         $a = rand(MIN_RANGE, MAX_RANGE);
