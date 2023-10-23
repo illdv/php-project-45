@@ -19,8 +19,20 @@ function play()
         $operationId = rand(0, count(OPERATIONS) - 1);
         $operation = OPERATIONS[$operationId];
         $question = "{$a} {$operation} {$b}";
-        $correctAnswer = strval(eval("return {$question};"));
-        return [$question, $correctAnswer];
+
+        switch ($operation) {
+            case '+':
+                $correctAnswer = $a + $b;
+                break;
+            case '-':
+                $correctAnswer = $a - $b;
+                break;
+            case '*':
+                $correctAnswer = $a * $b;
+                break;
+        }
+
+        return [$question, strval($correctAnswer)];
     };
 
     run(DESCRIPTION, $round);
