@@ -16,11 +16,11 @@ function isEven($number)
 
 function play(): void
 {
-    $round = function () {
+    $generateRound = function () {
         $question = rand(MIN_RANGE, MAX_RANGE);
         $correctAnswer = isEven($question)  ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
 
-    run(DESCRIPTION, $round);
+    run(DESCRIPTION, $generateRound);
 }

@@ -13,7 +13,7 @@ const OPERATIONS = ['+', '-', '*'];
 
 function play()
 {
-    $round = function () {
+    $generateRound = function () {
         $a = rand(MIN_RANGE, MAX_RANGE);
         $b = rand(MIN_RANGE, MAX_RANGE);
         $operationId = rand(0, count(OPERATIONS) - 1);
@@ -35,5 +35,5 @@ function play()
         return [$question, strval($correctAnswer)];
     };
 
-    run(DESCRIPTION, $round);
+    run(DESCRIPTION, $generateRound);
 }
